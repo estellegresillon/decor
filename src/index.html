@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kelly Behun Studio | Interior Designer</title>
+    <meta name="description" content="Interior designer portfolio" />
+    <meta
+      name="keywords"
+      content="gsap, flip, javascript, animation, page transition"
+    />
+    <meta name="author" content="Estelle Grésillon" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://use.typekit.net/ckf7ljy.css" />
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <script>
+      document.documentElement.className = "js";
+      var supportsCssVars = function () {
+        var e,
+          t = document.createElement("style");
+        return (
+          (t.innerHTML = "root: { --tmp-var: bold; }"),
+          document.head.appendChild(t),
+          (e = !!(
+            window.CSS &&
+            window.CSS.supports &&
+            window.CSS.supports("font-weight", "var(--tmp-var)")
+          )),
+          t.parentNode.removeChild(t),
+          e
+        );
+      };
+      supportsCssVars() ||
+        alert(
+          "Please view this demo in a modern browser that supports CSS Variables."
+        );
+    </script>
+  </head>
+  <body class="loading">
+    <main>
+      <div class="frame">
+        <div class="frame__title">
+          <h1 class="frame__title-main">Kelly Behun Studio</h1>
+          <a aria-label="About" class="frame__title-back" href="#">About</a>
+        </div>
+        <a class="frame__prev" href="#">Contact</a>
+      </div>
+      <section class="preview-wrap">
+        <div class="preview">
+          <div class="preview__img-wrap">
+            <div class="preview__img">
+              <div
+                class="preview__img-inner"
+                style="background-image: url(img/1.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="preview__title">
+            <h2 class="preview__title-main">
+              <span class="oh"
+                ><span class="oh__inner">Classic House</span></span
+              >
+              <span class="oh"><span class="oh__inner">residence</span></span>
+            </h2>
+          </div>
+        </div>
+        <div class="preview">
+          <div class="preview__img-wrap">
+            <div class="preview__img">
+              <div
+                class="preview__img-inner"
+                style="background-image: url(img/2.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="preview__title">
+            <h2 class="preview__title-main">
+              <span class="oh"
+                ><span class="oh__inner">1228 Madison</span></span
+              >
+              <span class="oh"><span class="oh__inner">avenue</span></span>
+            </h2>
+          </div>
+        </div>
+        <div class="preview">
+          <div class="preview__img-wrap">
+            <div class="preview__img">
+              <div
+                class="preview__img-inner"
+                style="background-image: url(img/3.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="preview__title">
+            <h2 class="preview__title-main">
+              <span class="oh"><span class="oh__inner">111 West</span></span>
+              <span class="oh"><span class="oh__inner">57th street</span></span>
+            </h2>
+          </div>
+        </div>
+        <div class="preview">
+          <div class="preview__img-wrap">
+            <div class="preview__img">
+              <div
+                class="preview__img-inner"
+                style="background-image: url(img/4.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="preview__title">
+            <h2 class="preview__title-main">
+              <span class="oh"><span class="oh__inner">Gulf Coast</span></span>
+              <span class="oh"><span class="oh__inner">home</span></span>
+            </h2>
+          </div>
+        </div>
+        <div class="preview">
+          <div class="preview__img-wrap">
+            <div class="preview__img">
+              <div
+                class="preview__img-inner"
+                style="background-image: url(img/5.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="preview__title">
+            <h2 class="preview__title-main">
+              <span class="oh"
+                ><span class="oh__inner">Fifteen Hudson</span></span
+              >
+              <span class="oh"><span class="oh__inner">yards</span></span>
+            </h2>
+          </div>
+        </div>
+        <div class="preview">
+          <div class="preview__img-wrap">
+            <div class="preview__img">
+              <div
+                class="preview__img-inner"
+                style="background-image: url(img/6.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="preview__title">
+            <h2 class="preview__title-main">
+              <span class="oh"><span class="oh__inner">Midtown</span></span>
+              <span class="oh"><span class="oh__inner">penthouse</span></span>
+            </h2>
+          </div>
+        </div>
+        <div class="preview">
+          <div class="preview__img-wrap">
+            <div class="preview__img">
+              <div
+                class="preview__img-inner"
+                style="background-image: url(img/7.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="preview__title">
+            <h2 class="preview__title-main">
+              <span class="oh"><span class="oh__inner">Hamptons</span></span>
+              <span class="oh"><span class="oh__inner">home</span></span>
+            </h2>
+          </div>
+        </div>
+        <div class="preview">
+          <div class="preview__img-wrap">
+            <div class="preview__img">
+              <div
+                class="preview__img-inner"
+                style="background-image: url(img/8.jpg)"
+              ></div>
+            </div>
+          </div>
+          <div class="preview__title">
+            <h2 class="preview__title-main">
+              <span class="oh"><span class="oh__inner">New York</span></span>
+              <span class="oh"><span class="oh__inner">penthouse</span></span>
+            </h2>
+          </div>
+        </div>
+      </section>
+      <section class="content-wrap">
+        <div class="content">
+          <div class="content__group">
+            <div class="content__title">
+              <span class="oh"
+                ><span class="oh__inner">Classic House</span></span
+              >
+              <span class="oh"><span class="oh__inner">residence</span></span>
+            </div>
+            <div class="content__meta oh">
+              <span class="oh__inner"
+                >Interior design by Kelly Behun Studio.</span
+              >
+            </div>
+            <div class="content__text">
+              Architecture by Robert A.M. Stern Architects.<br />
+              Photos by Nicole Franzen.
+            </div>
+          </div>
+          <div class="content__thumbs">
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/1.jpg)"
+            ></div>
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/1_1.jpg)"
+            ></div>
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/1_2.jpg)"
+            ></div>
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/1_3.jpg)"
+            ></div>
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/1_4.jpg)"
+            ></div>
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/1_5.jpg)"
+            ></div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="content__group">
+            <div class="content__title">
+              <span class="oh"
+                ><span class="oh__inner">1228 Madison</span></span
+              >
+              <span class="oh"><span class="oh__inner">avenue</span></span>
+            </div>
+            <div class="content__meta oh">
+              <span class="oh__inner"
+                >Interior design by Kelly Behun Studio.</span
+              >
+            </div>
+            <div class="content__text">
+              Architecture by Robert A.M. Stern Architects.<br />
+              Renderings by Grain.
+            </div>
+          </div>
+          <div class="content__thumbs">
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/2_1.jpg)"
+            ></div>
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/2_2.jpg)"
+            ></div>
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/2_3.jpg)"
+            ></div>
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/2_4.jpg)"
+            ></div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="content__group">
+            <div class="content__title">
+              <span class="oh"><span class="oh__inner">111 West</span></span>
+              <span class="oh"><span class="oh__inner">57th street</span></span>
+            </div>
+            <div class="content__meta oh">
+              <span class="oh__inner"
+                >Interior design by Kelly Behun Studio.</span
+              >
+            </div>
+            <div class="content__text">
+              Photos by Nicole Franzen and Colin Miller.
+            </div>
+          </div>
+          <div class="content__thumbs">
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/3.jpg)"
+            ></div>
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/3_1.jpg)"
+            ></div>
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/3_2.jpg)"
+            ></div>
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/3_3.jpg)"
+            ></div>
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/3_4.jpg)"
+            ></div>
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/3_5.jpg)"
+            ></div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="content__group">
+            <div class="content__title">
+              <span class="oh"><span class="oh__inner">Gulf Coast</span></span>
+              <span class="oh"><span class="oh__inner">home</span></span>
+            </div>
+            <div class="content__meta oh">
+              <span class="oh__inner"
+                >Interior design by Kelly Behun Studio.</span
+              >
+            </div>
+            <div class="content__text">An oceanfront home in Naples.</div>
+          </div>
+          <div class="content__thumbs">
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/4.jpg)"
+            ></div>
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/4_1.jpg)"
+            ></div>
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/4_2.jpg)"
+            ></div>
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/4_3.jpg)"
+            ></div>
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/4_4.jpg)"
+            ></div>
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/4_5.jpg)"
+            ></div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="content__group">
+            <div class="content__title">
+              <span class="oh"
+                ><span class="oh__inner">Fifteen Hudson</span></span
+              >
+              <span class="oh"><span class="oh__inner">yards</span></span>
+            </div>
+            <div class="content__meta oh">
+              <span class="oh__inner"
+                >Interior design by Kelly Behun Studio.</span
+              >
+            </div>
+            <div class="content__text">Renderings by Binyan Studios.</div>
+          </div>
+          <div class="content__thumbs">
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/5.jpg)"
+            ></div>
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/5_1.jpg)"
+            ></div>
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/5_2.jpg)"
+            ></div>
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/5_3.jpg)"
+            ></div>
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/5_4.jpg)"
+            ></div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="content__group">
+            <div class="content__title">
+              <span class="oh"><span class="oh__inner">Midtown</span></span>
+              <span class="oh"><span class="oh__inner">penthouse</span></span>
+            </div>
+            <div class="content__meta oh">
+              <span class="oh__inner"
+                >Interior design by Kelly Behun Studio.</span
+              >
+            </div>
+            <div class="content__text"></div>
+          </div>
+          <div class="content__thumbs">
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/6.jpg)"
+            ></div>
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/6_1.jpg)"
+            ></div>
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/6_2.jpg)"
+            ></div>
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/6_3.jpg)"
+            ></div>
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/6_4.jpg)"
+            ></div>
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/6_5.jpg)"
+            ></div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="content__group">
+            <div class="content__title">
+              <span class="oh"><span class="oh__inner">Hamptons</span></span>
+              <span class="oh"><span class="oh__inner">home</span></span>
+            </div>
+            <div class="content__meta oh">
+              <span class="oh__inner"
+                >Interior design by Kelly Behun Studio.</span
+              >
+            </div>
+            <div class="content__text">
+              Photography by William Waldron & Daniel Kukla.
+            </div>
+          </div>
+          <div class="content__thumbs">
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/7.jpg)"
+            ></div>
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/7_1.jpg)"
+            ></div>
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/7_2.jpg)"
+            ></div>
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/7_3.jpg)"
+            ></div>
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/7_4.jpg)"
+            ></div>
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/7_5.jpg)"
+            ></div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="content__group">
+            <div class="content__title">
+              <span class="oh"><span class="oh__inner">New York</span></span>
+              <span class="oh"><span class="oh__inner">penthouse</span></span>
+            </div>
+            <div class="content__meta oh">
+              <span class="oh__inner"
+                >Interior design by Kelly Behun Studio.</span
+              >
+            </div>
+            <div class="content__text"></div>
+          </div>
+          <div class="content__thumbs">
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/8.jpg)"
+            ></div>
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/8_1.jpg)"
+            ></div>
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/8_2.jpg)"
+            ></div>
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/8_3.jpg)"
+            ></div>
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/8_4.jpg)"
+            ></div>
+            <div
+              class="content__thumbs-item"
+              style="background-image: url(img/8_5.jpg)"
+            ></div>
+          </div>
+        </div>
+        <button class="unbutton action action--back">
+          <svg width="25px" height="25px" viewBox="0 0 25 25">
+            <path
+              d="M24 12.001H2.914l5.294-5.295-.707-.707L1 12.501l6.5 6.5.707-.707-5.293-5.293H24v-1z"
+            />
+          </svg>
+          <span>Go back</span>
+        </button>
+      </section>
+    </main>
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>
